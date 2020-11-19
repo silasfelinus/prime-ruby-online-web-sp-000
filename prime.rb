@@ -8,16 +8,11 @@ def prime? (integer)
     false
   else
     #create list of numbers to check
-    active_number = 3
-    numbers_to_test = []
-    while active_number < integer / 2
-      numbers_to_test << active_number
-      active_number += 2
-    end
-    numbers_to_test.each do |number|
-      if integer % number == 0
+    now_testing = 3
+    while now_testing < integer / 2
+      if integer % now_testing == 0
         false
-      end
+      else now_testing += 2
     end
     true
   end
