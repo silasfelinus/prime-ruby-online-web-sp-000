@@ -8,3 +8,4 @@ def prime? (integer)
   else
 
   end
+end
