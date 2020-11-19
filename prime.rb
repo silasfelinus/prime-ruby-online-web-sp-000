@@ -13,7 +13,9 @@ def prime? (integer)
       if integer % now_testing == 0
         false
       else now_testing += 2
+      end
     end
+
     true
   end
 end
