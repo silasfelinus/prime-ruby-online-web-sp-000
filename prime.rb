@@ -3,9 +3,12 @@ def prime? (integer)
 
   if integer < 2
     false
-  elsif integer >  1 && integer < 4
+  elsif integer == 2
     true
+  #remove even numbers
+  elsif integer % 2 == 0
+    false
   else
-
+    
   end
 end
