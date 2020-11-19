@@ -15,7 +15,11 @@ def prime? (integer)
       numbers_to_test << active_number
       active_number += 2
     end
-    puts numbers_to_test
+    numbers_to_test.each |number|
+    if integer % number == 0
+      false
+    else
+      true
+    end
+  end
 end
-
-prime?(13)
