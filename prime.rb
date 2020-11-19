@@ -1,14 +1,21 @@
 # Add  code here!
 def prime? (integer)
 
-  if integer < 2
+  #eliminate less than 2 and even numbers
+  if integer < 2 || integer % 2 == 0
     false
+  #Handle the only even prime
   elsif integer == 2
     true
-  #remove even numbers
-  elsif integer % 2 == 0
-    false
   else
-    true
-  end
+    #create list of numbers to check
+    active_number = 3
+    numbers_to_test = []
+    while active_number < integer / 2
+      numbers_to_test << active_number
+      active_number += 2
+    end
+    puts numbers_to_test
 end
+
+prime?(13)
