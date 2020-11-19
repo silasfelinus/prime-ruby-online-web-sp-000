@@ -11,7 +11,7 @@ def prime? (integer)
     while now_testing < integer / 2
       if integer % now_testing == 0
         return false
-      else 
+      else
         now_testing += 2
       end
     end
