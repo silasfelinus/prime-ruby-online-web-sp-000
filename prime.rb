@@ -9,6 +9,6 @@ def prime? (integer)
   elsif integer % 2 == 0
     false
   else
-    
+
   end
 end
