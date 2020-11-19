@@ -17,9 +17,8 @@ def prime? (integer)
     numbers_to_test.each do |number|
       if integer % number == 0
         false
-      else
-        true
       end
     end
+    true
   end
 end
